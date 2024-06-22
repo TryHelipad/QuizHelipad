@@ -204,3 +204,40 @@ function calculateCostSavings(companySize, tier) {
 }
 
 fetchAirtableData();
+
+function openModal() {
+    document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+
+async function handleSecondQuizSubmit(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    const form = document.getElementById('secondQuizForm');
+    const formData = new FormData(form);
+
+    const additionalData = {
+        additionalQuestion1: formData.get('additionalQuestion1'),
+        additionalQuestion2: formData.get('additionalQuestion2')
+    };
+
+    // Here you can handle the additional quiz data (e.g., send to server, display report, etc.)
+    console.log('Second quiz data:', additionalData);
+
+    // Close the modal after submission
+    closeModal();
+
+    // Optionally, you can show a thank you message or process the data further
+    alert('Thank you for completing the second quiz!');
+}
+
+// Attach event listener to handle modal close on click outside of the modal content
+window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};

@@ -192,14 +192,30 @@
             </div>
             <div class="report-item-ebook">
                 <p class="report-title-ebook">You have unlocked a free customized report</p>
-                <p id="report-free-ebook">Based on the high integration score that you have recieved, you have unlocked a free custom report. By answering a few more questions you can unlock a step by step guide to hiring, implementing and retaining remote staff. We will take into account your unique business needs and ensure you don't make the same mistakes that most other businesses make.
-                </p>
+                <p id="report-free-ebook">Based on the high integration score that you have received, you have unlocked a free custom report. By answering a few more questions you can unlock a step-by-step guide to hiring, implementing, and retaining remote staff. We will take into account your unique business needs and ensure you don't make the same mistakes that most other businesses make.</p>
                 <div class="buttons-container-ebook">
-                    <button>Give me my free report</button>
+                    <button onclick="openModal()">Give me my free report</button>
                 </div>
             </div>
         </div>
-    </div>
+    
+        <!-- Modal for second quiz -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <form id="secondQuizForm" onsubmit="handleSecondQuizSubmit(event)">
+                    <h2>Second Quiz</h2>
+                    <!-- Second quiz questions here -->
+                    <label for="additionalQuestion1">Additional Question 1</label>
+                    <input type="text" id="additionalQuestion1" name="additionalQuestion1" required>
+                    
+                    <label for="additionalQuestion2">Additional Question 2</label>
+                    <input type="text" id="additionalQuestion2" name="additionalQuestion2" required>
+                    
+                    <button type="submit">Get Free Report</button>
+                </form>
+            </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="quiz.js"></script>
