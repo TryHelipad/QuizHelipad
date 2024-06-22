@@ -191,6 +191,8 @@ select {
 .report-header {
     padding: 20px;
     text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
 .report {
