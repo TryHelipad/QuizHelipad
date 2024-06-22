@@ -154,6 +154,29 @@ select {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.buttons-container-ebook {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.buttons-container-book button {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons-container button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .form-step {
     display: none;
     flex-direction: column;
@@ -203,6 +226,18 @@ select {
     text-align: left;
     display: flex;
     flex-direction: column;
+}
+
+.report-item-ebook {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5) ;
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.report-title-ebook {
+    font-size: 26;
+    font-weight: bold;
 }
 
 .report-item:hover {
