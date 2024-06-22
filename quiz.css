@@ -304,11 +304,14 @@ select {
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+    width: fit-content;
+    max-width: none;
     border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .close-button {
