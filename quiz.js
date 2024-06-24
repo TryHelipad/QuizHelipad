@@ -163,8 +163,40 @@ function showReport(firstName, benefits) {
     document.getElementById('report-industry-benefits').textContent = benefits.industryBenefits;
     document.getElementById('report-businessType-benefits').textContent = benefits.businessTypeBenefits;
 
+    populateSecondQuizDropdowns(roles);
+
     document.getElementById('customQuizForm').style.display = 'none';
     document.getElementById('report').classList.add('active');
+}
+
+function populateSecondQuizDropdowns(roles) {
+    const additionalQuestion1 = document.getElementById('additionalQuestion1');
+    const additionalQuestion2 = document.getElementById('additionalQuestion2');
+
+    additionalQuestion1.innerHTML = '';
+    for (let i = 1; i <= 10; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        additionalQuestion1.appendChild(option);
+    }
+
+    additionalQuestion2.innerHTML = '';
+    roles.forEach(role => {
+        const option = document.createElement('option');
+        option.value = role;
+        option.textContent = role;
+        additionalQuestion2.appendChild(option);
+    });
+
+    // Add a few more roles for diversity
+    const extraRoles = ['Marketing Specialist', 'Data Analyst', 'Sales Executive'];
+    extraRoles.forEach(role => {
+        const option = document.createElement('option');
+        option.value = role;
+        option.textContent = role;
+        additionalQuestion2.appendChild(option);
+    });
 }
 
 function calculateCostSavings(companySize, tier) {

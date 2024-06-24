@@ -41,7 +41,7 @@ form, .report {
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+    padding: 20px;
     max-width: 600px;
     width: 100%;
     margin: 20px;
@@ -53,8 +53,6 @@ form {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    min-width: 600px;
-    min-height: 600px;
 }
 
 label {
@@ -68,8 +66,8 @@ label {
 }
 
 input, select {
-    padding: 14px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -89,7 +87,7 @@ select {
 
 .option-block {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     border: 2px solid #ddd;
@@ -141,7 +139,7 @@ select {
 .buttons-container button {
     width: 48%;
     padding: 12px;
-    font-size: 16px;
+    font-size: 14px;
     background: linear-gradient(45deg, #ff6ec4, #7873f5);
     border: none;
     border-radius: 8px;
@@ -162,9 +160,9 @@ select {
 }
 
 .buttons-container-ebook button {
-    width: 48%;
+    width: 70%;
     padding: 12px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: white;
     border: none;
     border-radius: 8px;
@@ -173,7 +171,7 @@ select {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.buttons-container button:hover {
+.buttons-container-ebook button:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -182,6 +180,7 @@ select {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-width: 300px;
 }
 
 .form-step.active {
@@ -200,8 +199,8 @@ select {
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    min-width: 600px;
+    padding: 20px;
+    min-width: 300px;
     max-width: 600px;
     width: 100%;
     margin: 20px auto;
@@ -214,7 +213,7 @@ select {
 }
 
 .report h2 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -222,7 +221,7 @@ select {
 .report-title {
     font-weight: bold;
     color: black;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 20px;
     text-align: left;
 }
@@ -244,7 +243,7 @@ select {
 }
 
 .report-title-ebook {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -262,7 +261,7 @@ select {
 
 .report-roles-list li {
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
 }
 
@@ -284,7 +283,7 @@ select {
 #integration-score {
     color: green;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .modal {
@@ -304,28 +303,75 @@ select {
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 40px;
+    padding: 20px;
     border: 1px solid #888;
-    width: fit-content;
-    max-width: none;
+    width: 80%;
+    max-width: 800px;
     border-radius: 12px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal-heading {
+    font-size: 24px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'DM Serif Display';
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.modal-image {
+    flex: 1;
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.modal-text {
+    flex: 1;
+    max-width: 100%;
+    margin-left: 20px;
 }
 
 .close-button {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
 }
 
 .close-button:hover,
 .close-button:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
+}
+
+#secondQuizForm {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 /* Media Queries for Mobile Devices */
@@ -343,6 +389,21 @@ select {
         margin-bottom: 10px;
     }
 
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .modal-text {
+        width: 100%;
+        font-size: 14px;
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -359,28 +420,32 @@ select {
     }
 
     label {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     input, select {
-        padding: 10px;
-        font-size: 14px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .options-container {
+        justify-content: center;
     }
 
     .option-block {
-        width: calc(33% - 10px); /* Two blocks per row */
+        width: calc(50% - 10px);
     }
 
     .buttons-container button {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .report h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .report-title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .report-item {
@@ -388,6 +453,33 @@ select {
     }
 
     .report-roles-list li {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+
+    .modal-heading {
+        font-size: 24px;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-image {
+        max-width: 70%;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .modal-text {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .close-button {
+        font-size: 24px;
     }
 }

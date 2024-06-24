@@ -15,76 +15,77 @@
     <div id="customQuizFormContainer">
         <form id="customQuizForm" name="helipad-quiz-form" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
             <input type="hidden" name="form-name" value="helipad-quiz-form">
+                
             <!-- Step 1: Industry -->
-            <div id="step1" class="form-step active">
-                <label for="industry">What industry is your business in?</label>
-                <div class="options-container">
-                    <div class="option-block" onclick="selectIndustry('construction')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Construction.svg" alt="Construction">
-                        <span>Construction</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('technology')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Technology.svg" alt="Technology">
-                        <span>Technology</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('agency')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/586218bd0ba8f62959324ae680e28ace79263026/Resources/Agency-Image.svg" alt="Finance">
-                        <span>Agency</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('healthcare')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Healthcare.svg" alt="Healthcare">
-                        <span>Healthcare</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('finance')">
-                        <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/6672571d95e2ad26d9630451_Untitled%20design%20(6).svg" alt="Finance">
-                        <span>Finance</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('legal')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Legal.svg" alt="Legal">
-                        <span>Legal</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('education')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Education.svg" alt="Education">
-                        <span>Education</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('retail')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Retail.svg" alt="Retail">
-                        <span>Retail</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('hospitality')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Hospitality.svg" alt="Hospitality">
-                        <span>Hospitality</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('manufacturing')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Manufacturing.svg" alt="Manufacturing">
-                        <span>Manufacturing</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('real_estate')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Real%20Estate.svg" alt="Real Estate">
-                        <span>Real Estate</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('agriculture')">
-                        <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Agriculture.svg" alt="Agriculture">
-                        <span>Agriculture</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('transportation')">
-                        <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/66725f1cc7a3aed476327c5f_Untitled%20design%20(13).svg" alt="Transportation">
-                        <span>Transportation</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('services')">
-                        <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/66725f1810743628cc7b898d_Untitled%20design%20(14).svg" alt="Services">
-                        <span>Services</span>
-                    </div>
-                    <div class="option-block" onclick="selectIndustry('other')">
-                        <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/66725f495fd7293ee5d0d90c_Untitled%20design%20(15).svg" alt="Other">
-                        <span>Other</span>
-                    </div>
-                </div>
-                <input type="hidden" id="industry" name="industry">
-                <div class="buttons-container">
-                    <button type="button" onclick="nextStep(2)">Next</button>
-                </div>
+<div id="step1" class="form-step active">
+    <label for="industry">What industry is your business in?</label>
+        <div class="options-container">
+            <div class="option-block" onclick="selectIndustry('construction')">
+                <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Construction.svg" alt="Construction">
+                <span>Construction</span>
             </div>
+        <div class="option-block" onclick="selectIndustry('technology')">
+                <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Technology.svg" alt="Technology">
+                <span>Technology</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('agency')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/586218bd0ba8f62959324ae680e28ace79263026/Resources/Agency-Image.svg" alt="Finance">
+            <span>Agency</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('healthcare')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Healthcare.svg" alt="Healthcare">
+            <span>Healthcare</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('finance')">
+            <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/6672571d95e2ad26d9630451_Untitled%20design%20(6).svg" alt="Finance">
+            <span>Finance</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('legal')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Legal.svg" alt="Legal">
+            <span>Legal</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('education')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Education.svg" alt="Education">
+            <span>Education</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('retail')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Retail.svg" alt="Retail">
+            <span>Retail</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('hospitality')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Hospitality.svg" alt="Hospitality">
+            <span>Hospitality</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('manufacturing')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Manufacturing.svg" alt="Manufacturing">
+            <span>Manufacturing</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('real_estate')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Real%20Estate.svg" alt="Real Estate">
+            <span>Real Estate</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('agriculture')">
+            <img src="https://raw.githubusercontent.com/TryHelipad/QuizHelipad/e9142713b151e6935af219b73d4ad16bdd53bcf4/Resources/Agriculture.svg" alt="Agriculture">
+            <span>Agriculture</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('transportation')">
+            <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/66725f1cc7a3aed476327c5f_Untitled%20design%20(13).svg" alt="Transportation">
+            <span>Transportation</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('services')">
+            <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/66725f1810743628cc7b898d_Untitled%20design%20(14).svg" alt="Services">
+            <span>Services</span>
+        </div>
+        <div class="option-block" onclick="selectIndustry('other')">
+            <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/66725f495fd7293ee5d0d90c_Untitled%20design%20(15).svg" alt="Other">
+            <span>Other</span>
+        </div>
+    </div>
+    <input type="hidden" id="industry" name="industry">
+    <div class="buttons-container">
+        <button type="button" onclick="nextStep(2)">Next</button>
+    </div>
+</div>
 
             <!-- Step 2: Business Type -->
             <div id="step2" class="form-step">
@@ -199,27 +200,34 @@
             </div>
         </div>
     
-        <!-- Modal for second quiz -->
+          <!-- Modal for second quiz -->
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal()">&times;</span>
-                <form id="secondQuizForm" onsubmit="handleSecondQuizSubmit(event)">
-                    <h2>Get a free customized report for your business!</h2>
-                    <p>Congratulations on unlocking a personalized report specifically for your business. We will take into account a few more points and our expert integration experts will guide you
-                        on exactly how to hire and retain workers. We guarantee that this free report will guide you towards increasing 70% profit margins in your business,
-                    </p>
-                    <!-- Second quiz questions here -->
-                    <label for="How many staff would you be looking to add in your business?">Additional Question 1</label>
-                    <input type="text" id="additionalQuestion1" name="additionalQuestion1" required>
-                    
-                    <label for="additionalQuestion2">Which roles would best describe your new hire/s?</label>
-                    <input type="text" id="additionalQuestion2" name="additionalQuestion2" required>
-                    <div class="buttons-container">
-                    <button type="submit">Get Free Report</button>
+                <h2 class="modal-heading">Download Our Free Ebook "The Ultimate Guide For Hiring and Managing Remote Employees"</h2>
+                <div class="modal-body">
+                    <img src="https://uploads-ssl.webflow.com/666649c3136bb0669471bce8/6677a01e4ebc55082ebe6bd7_Untitled%20design%20(15).png" alt="Descriptive Alt Text" class="modal-image">
+                    <div class="modal-text">
+                        <p>Congratulations on unlocking our Free Ebook. This book is packed with 100+ pages of valuable insights on how to identify roles within your business that can be outsourced, how to find the best remote staff, how to hire, train and manage them, how to handle overseas payments and more. Download this today to get started on your journey to become more profitable and saving more time.</p>
+                        <form id="secondQuizForm" onsubmit="handleSecondQuizSubmit(event)">
+                            <label for="additionalQuestion1">How many remote employees are you looking to hire for your business?</label>
+                            <select id="additionalQuestion1" name="additionalQuestion1" required>
+                                <!-- Options will be populated dynamically -->
+                            </select>
+
+                            <label for="additionalQuestion2">For which roles are you looking to hire remote employees?</label>
+                            <select id="additionalQuestion2" name="additionalQuestion2" required>
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                            <div class="buttons-container">
+                                <button type="submit">Get Free Report</button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="quiz.js"></script>
